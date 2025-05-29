@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Website - Services</title>
+</head>
+<body>
+    <h1>Our Services</h1>
+    
+    <!-- Navigation at the top -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="services.html">Services</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+    <hr>
+    
+    <h2>What We Offer</h2>
+    <ul>
+        <li>HTML Website Development</li>
+        <li>Basic Web Design</li>
+        <li>Web Development Tutorials</li>
+    </ul>
+    
+    <h3>Pricing</h3>
+    <table border="1">
+        <tr>
+            <th>Service</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Basic HTML Site</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>5-Page Website</td>
+            <td>$300</td>
+        </tr>
+    </table>
+    
+    <!-- Navigation at the bottom -->
+    <hr>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="services.html">Services</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+</body>
+</html>

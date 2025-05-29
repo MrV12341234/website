@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Website - Contact</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    
+    <!-- Navigation at the top -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="services.html">Services</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+    <hr>
+    
+    <h2>Get in Touch</h2>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+    <h3>Other Contact Methods</h3>
+    <p>Email: contact@example.com</p>
+    <p>Phone: (123) 456-7890</p>
+
+    <h4>Here's My Photo</h2>
+    <!-- Image added here -->
+    <img src="images/DSC05078.jpg" alt="Lion" width="500">
+    
+    <!-- Navigation at the bottom -->
+    <hr>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="services.html">Services</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+</body>
+</html>
