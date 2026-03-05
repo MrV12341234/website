@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Blog — Scott & Marissa’s Travels</title>
-  <meta name="description" content="Travel blog entries from Scott & Marissa." />
+  <meta name="description" content="Travel blog posts from Scott & Marissa." />
 
   <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
@@ -25,16 +25,122 @@
   </header>
 
   <main class="container section">
-    <h1>Blog</h1>
-    <p>This is where your posts will go. Paste your WordPress Blog content when ready and we’ll format it nicely.</p>
+    <h1 class="page-title">Blog Posts and stuff</h1>
+    <p class="page-subtitle">Click a post to read it.</p>
 
-    <!-- Example placeholder post cards (optional) -->
-    <div style="display:grid; gap:16px; margin-top:24px;">
-      <article style="border:1px solid #e7e7e7; border-radius:10px; padding:16px;">
-        <h2 style="margin:0 0 6px;">Sample Post Title</h2>
-        <p style="margin:0; color:#5b5b5b;">Short excerpt goes here…</p>
+    <div class="spacer-sm" aria-hidden="true"></div>
+
+    <section class="post-list" aria-label="Blog posts list">
+      <!-- 1) italy (most recent) -->
+      <article class="post-card">
+        <a class="post-card__imageLink" href="./italy/">
+          <img src="../assets/img/blog-italy.jpg" alt="Italy cover photo" loading="lazy" />
+        </a>
+        <div class="post-card__content">
+          <h2 class="post-card__title"><a href="./italy/">Italy</a></h2>
+          <p class="post-card__excerpt">Short snippet for Italy goes here…</p>
+          <p class="post-card__meta">Most recent</p>
+        </div>
       </article>
-    </div>
+
+      <hr class="post-divider" />
+
+      <!-- 2) india -->
+      <article class="post-card">
+        <a class="post-card__imageLink" href="./india/">
+          <img src="../assets/img/blog-india.jpg" alt="India cover photo" loading="lazy" />
+        </a>
+        <div class="post-card__content">
+          <h2 class="post-card__title"><a href="./india/">India</a></h2>
+          <p class="post-card__excerpt">Short snippet for India goes here…</p>
+          <p class="post-card__meta">—</p>
+        </div>
+      </article>
+
+      <hr class="post-divider" />
+
+      <!-- 3) philippines -->
+      <article class="post-card">
+        <a class="post-card__imageLink" href="./philippines/">
+          <img src="../assets/img/blog-philippines.jpg" alt="Philippines cover photo" loading="lazy" />
+        </a>
+        <div class="post-card__content">
+          <h2 class="post-card__title"><a href="./philippines/">Philippines</a></h2>
+          <p class="post-card__excerpt">Short snippet for Philippines goes here…</p>
+          <p class="post-card__meta">—</p>
+        </div>
+      </article>
+
+      <hr class="post-divider" />
+
+      <!-- 4) bali -->
+      <article class="post-card">
+        <a class="post-card__imageLink" href="./bali/">
+          <img src="../assets/img/blog-bali.jpg" alt="Bali cover photo" loading="lazy" />
+        </a>
+        <div class="post-card__content">
+          <h2 class="post-card__title"><a href="./bali/">Bali was a dream</a></h2>
+          <p class="post-card__excerpt">Short snippet for Bali goes here…</p>
+          <p class="post-card__meta">—</p>
+        </div>
+      </article>
+
+      <hr class="post-divider" />
+
+      <!-- 5) shanghaiBejing -->
+      <article class="post-card">
+        <a class="post-card__imageLink" href="./shanghaiBejing/">
+          <img src="../assets/img/blog-shanghaiBejing.jpg" alt="Shanghai and Beijing cover photo" loading="lazy" />
+        </a>
+        <div class="post-card__content">
+          <h2 class="post-card__title"><a href="./shanghaiBejing/">Shanghai &amp; Beijing</a></h2>
+          <p class="post-card__excerpt">Short snippet for Shanghai/Beijing goes here…</p>
+          <p class="post-card__meta">—</p>
+        </div>
+      </article>
+
+      <hr class="post-divider" />
+
+      <!-- 6) chinaArrival -->
+      <article class="post-card">
+        <a class="post-card__imageLink" href="./chinaArrival/">
+          <img src="../assets/img/blog-chinaArrival.jpg" alt="China arrival cover photo" loading="lazy" />
+        </a>
+        <div class="post-card__content">
+          <h2 class="post-card__title"><a href="./chinaArrival/">China Arrival</a></h2>
+          <p class="post-card__excerpt">Short snippet for China Arrival goes here…</p>
+          <p class="post-card__meta">—</p>
+        </div>
+      </article>
+
+      <hr class="post-divider" />
+
+      <!-- 7) moving -->
+      <article class="post-card">
+        <a class="post-card__imageLink" href="./moving/">
+          <img src="../assets/img/blog-moving.jpg" alt="Moving cover photo" loading="lazy" />
+        </a>
+        <div class="post-card__content">
+          <h2 class="post-card__title"><a href="./moving/">Moving</a></h2>
+          <p class="post-card__excerpt">Short snippet for Moving goes here…</p>
+          <p class="post-card__meta">—</p>
+        </div>
+      </article>
+
+      <hr class="post-divider" />
+
+      <!-- 8) newzealand (oldest) -->
+      <article class="post-card">
+        <a class="post-card__imageLink" href="./newzealand/">
+          <img src="../assets/img/blog-newzealand.jpg" alt="New Zealand cover photo" loading="lazy" />
+        </a>
+        <div class="post-card__content">
+          <h2 class="post-card__title"><a href="./newzealand/">Our Honeymoon in New Zealand</a></h2>
+          <p class="post-card__excerpt">Short snippet for New Zealand goes here…</p>
+          <p class="post-card__meta">Oldest</p>
+        </div>
+      </article>
+    </section>
   </main>
 
   <footer class="site-footer">
