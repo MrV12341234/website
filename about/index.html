@@ -4,13 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About — Scott & Marissa’s Travels</title>
-  <meta name="description" content="About Scott & Marissa and this travel blog." />
+  <meta name="description" content="About Scott & Marissa and our travels." />
 
-  <!-- NOTE: we are inside /about/, so we go UP one folder with ../ -->
   <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
 
 <body id="top">
+  <!-- Top header / nav -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="site-title" href="../">Scott &amp; Marissa’s Travels</a>
@@ -25,11 +25,93 @@
     </div>
   </header>
 
-  <main class="container section">
-    <h1>About</h1>
-    <p>This page is coming soon. (We’ll replace this with your WordPress About content next.)</p>
+  <main>
+    <!-- Intro line -->
+    <section class="container section">
+      <p class="about-intro">Two lost souls swimming in a fish bowl</p>
+
+      <div class="spacer-lg" aria-hidden="true"></div>
+
+      <!-- 3 photo cards -->
+      <div class="trip-cards">
+        <!-- Card 1 -->
+        <article
+          class="photo-card"
+          style="background-image:url('../assets/img/IMG_2735-scaled.jpg');"
+        >
+          <div class="photo-card__caption">
+            <p class="photo-card__kicker">Let’s be honest</p>
+            <p class="photo-card__text">Fashion is neither of our strong suits.</p>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article
+          class="photo-card"
+          style="background-image:url('../assets/img/IMG_2079.jpg');"
+        >
+          <div class="photo-card__caption">
+            <p class="photo-card__kicker">Let’s get weird</p>
+            <p class="photo-card__text">We are strange and it fits us well.</p>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article
+          class="photo-card"
+          style="background-image:url('../assets/img/image000000-1.jpg');"
+        >
+          <div class="photo-card__caption">
+            <p class="photo-card__kicker">Let’s Travel</p>
+            <p class="photo-card__text">Each of us has visited to 10+ countries.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="spacer-lg" aria-hidden="true"></div>
+
+      <!-- Wedding / quote section -->
+      <section class="wedding-grid" aria-label="Wedding and quote">
+        <div
+          class="wedding-cover"
+          style="background-image:url('../assets/img/ansley.n.photography.msvwedding-140-scaled.jpeg');"
+        >
+          <div class="wedding-note">
+            Thats not our wedding day
+          </div>
+        </div>
+
+        <aside class="quote-card">
+          <p>“Our life is wild, let's keep it that way“</p>
+        </aside>
+      </section>
+
+      <div class="spacer-lg" aria-hidden="true"></div>
+
+      <!-- Refund policy section (using inline SVG instead of external theme file) -->
+      <section class="refund" aria-label="Refund policy">
+        <div class="refund-icon" aria-hidden="true">
+          <!-- Simple inline icon (no external file needed) -->
+          <svg width="70" height="70" viewBox="0 0 24 24" fill="none">
+            <path d="M7 3h10v4H7V3Z" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M6 7h12v14H6V7Z" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M9 11h6M9 15h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </div>
+
+        <p class="refund-title">A transparent Refund policy</p>
+
+        <p class="refund-text">
+          We are fully refundable, so shop with ease! If you have any issues with your purchase,
+          please contact our sales representative.
+        </p>
+
+        <div class="spacer-sm" aria-hidden="true"></div>
+      </section>
+    </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <nav class="footer-nav" aria-label="Footer">
