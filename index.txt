@@ -1,39 +1,110 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>My First Website - Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scott & Marissa’s Travels</title>
+  <meta name="description" content="A blog for family and friends to follow us on our adventures." />
+
+  <!-- Site-wide CSS -->
+  <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
-<body>
-    <h1>Welcome to My First Website</h1>
-    
-    <!-- Navigation at the top -->
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="services.html">Services</a> |
-        <a href="contact.html">Contact</a>
-    </nav>
-    
-    <hr>
-    
-    <h2>Home Page Content</h2>
-    <p>This is the main page of my simple HTML website.</p>
-    <p>HTML stands for HyperText Markup Language and is used to structure content on the web.</p>
-    
-    <h3>Why I'm Learning HTML</h3>
-    <ul>
-        <li>It's the foundation of all websites</li>
-        <li>It's relatively easy to learn</li>
-        <li>It's a valuable skill to have</li>
-    </ul>
-    
-    <!-- Navigation at the bottom -->
-    <hr>
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="services.html">Services</a> |
-        <a href="contact.html">Contact</a>
-    </nav>
+
+<body id="top">
+  <!-- Top header / nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-title" href="/">Scott &amp; Marissa’s Travels</a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/about/">About</a>
+        <a href="/blog/">Blog</a>
+        <a href="/contact/">Contact</a>
+        <a href="/">Homepage</a>
+        <a href="/photos/">Photos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section
+      class="hero"
+      style="--hero-image: url('/assets/img/IMG_2735-scaled.jpg');"
+      aria-label="Hero"
+    >
+      <div class="hero-inner container">
+        <h1>Welcome to our blog!!</h1>
+        <p class="hero-lead">
+          We are going on an adventure to China and this blog is our journal, enjoy :)
+        </p>
+
+        <a class="btn" href="/blog/">Recent Entries</a>
+      </div>
+    </section>
+
+    <!-- ABOUT SPLIT -->
+    <section class="section container split">
+      <div class="split-media">
+        <img
+          src="/assets/img/IMG_2738-768x1024.jpg"
+          alt="Scott and Marissa traveling"
+          loading="lazy"
+        />
+      </div>
+
+      <div class="split-content">
+        <p class="eyebrow">About us</p>
+
+        <h2>
+          We're hanging out &amp; living a life with a little less stability than you're used to.
+        </h2>
+
+        <ul class="checklist">
+          <li>Travel inspiration</li>
+          <li>Thought-provoking, relatable posts</li>
+        </ul>
+
+        <a class="btn btn-outline" href="/blog/">Join Our Journey</a>
+      </div>
+    </section>
+
+    <!-- CALLOUT / BANNER -->
+    <section
+      class="callout"
+      style="--callout-image: url('/assets/img/IMG_2735-scaled.jpg');"
+      aria-label="Callout"
+    >
+      <div class="container callout-inner">
+        <h2>Stay authentic to yourself.</h2>
+
+        <ul class="checklist checklist-on-dark">
+          <li>Check mark 1</li>
+          <li>Another pointless check mark</li>
+        </ul>
+
+        <a class="btn" href="#top">Go to the top</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="/about/">About</a>
+        <a href="/blog/">Blog</a>
+        <a href="/contact/">Contact</a>
+        <a href="/">Homepage</a>
+        <a href="/photos/">Photos</a>
+      </nav>
+
+      <p class="footer-note">
+        © <span id="year"></span> Scott &amp; Marissa’s Travels
+      </p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
