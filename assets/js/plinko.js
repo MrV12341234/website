@@ -24,6 +24,10 @@
   const W = 520;
   const H = 760;
 
+  // Bins (dividers) + sensors for scoring
+  const binsYTop = H - 170;
+  const binsYBottom = H - 40;
+
   // Bin values (edit these anytime)
   const BIN_VALUES = [10, 50, 100, 250, 500, 250, 100, 50, 10];
 
@@ -119,9 +123,69 @@
   }
   World.add(engine.world, pegBodies);
 
-  // Bins (dividers) + sensors for scoring
-  const binsYTop = H - 170;
-  const binsYBottom = H - 40;
+  // ---------- SIDE TRIANGLE BUMPERS (prevents coins slipping down the sides) ----------
+const BUMPER_WIDTH = 34;     // how far the triangle sticks into the board
+const BUMPER_HEIGHT = 44;    // triangle height
+const BUMPER_INSET_X = 10;   // how far from the wall (tweak if needed)
+const BUMPER_RESTITUTION = 0.2; // slight bounce
+
+const bumperBodies = [];
+
+// Add bumpers on the "short" rows only (odd rows: 1,3,5,7,...)
+// Stop before the bottom-most peg row so coins can fall down sides near the bottom if desired.
+for (let row = 1; row < PEG_ROWS - 1; row += 2) {
+  const y = PEG_START_Y + row * PEG_GAP_Y;
+
+  // If this is too close to the bins, stop (prevents weird interactions near the bottom)
+  if (y > binsYTop - 70) break;
+
+  // Left triangle points right:  >
+  const leftTri = Matter.Bodies.fromVertices(
+    BUMPER_INSET_X,
+    y,
+    [[
+      { x: 0, y: 0 },
+      { x: BUMPER_WIDTH, y: BUMPER_HEIGHT / 2 },
+      { x: 0, y: BUMPER_HEIGHT }
+    ]],
+    {
+      isStatic: true,
+      restitution: BUMPER_RESTITUTION,
+      render: {
+        fillStyle: "#ffd54a",           // yellow
+        strokeStyle: "rgba(255,255,255,0.35)",
+        lineWidth: 1
+      }
+    },
+    true
+  );
+
+  // Right triangle points left: <
+  const rightTri = Matter.Bodies.fromVertices(
+    W - BUMPER_INSET_X,
+    y,
+    [[
+      { x: BUMPER_WIDTH, y: 0 },
+      { x: 0, y: BUMPER_HEIGHT / 2 },
+      { x: BUMPER_WIDTH, y: BUMPER_HEIGHT }
+    ]],
+    {
+      isStatic: true,
+      restitution: BUMPER_RESTITUTION,
+      render: {
+        fillStyle: "#ffd54a",
+        strokeStyle: "rgba(255,255,255,0.35)",
+        lineWidth: 1
+      }
+    },
+    true
+  );
+
+  bumperBodies.push(leftTri, rightTri);
+}
+
+World.add(engine.world, bumperBodies);  
+  
 
   const binCount = BIN_VALUES.length;
   const binWidth = W / binCount;
