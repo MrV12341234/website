@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Plinko — Scott & Marissa’s Travels</title>
+
+  <!-- Your site-wide styles -->
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <!-- Plinko page styles -->
+  <link rel="stylesheet" href="../assets/css/plinko.css" />
+
+  <!-- Physics engine (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/matter-js@0.20.0/build/matter.min.js"></script>
+</head>
+
+<body id="top">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-title" href="../">Scott &amp; Marissa’s Travels</a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <a href="../about/">About</a>
+        <a href="../blog/">Blog</a>
+        <a href="../contact/">Contact</a>
+        <a href="../">Homepage</a>
+        <a href="../photos/">Photos</a>
+        <a href="../plinko/">Plinko</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1 class="page-title">Plinko</h1>
+    <p class="page-subtitle">Click anywhere above the pegs to drop a coin.</p>
+
+    <div class="plinko-layout">
+      <!-- Game board -->
+      <section class="plinko-board" aria-label="Plinko board">
+        <div class="plinko-hint">Click to drop coin</div>
+        <div id="plinkoMount" class="plinko-mount"></div>
+      </section>
+
+      <!-- Sidebar / score -->
+      <aside class="plinko-sidebar" aria-label="Score panel">
+        <div class="score-card">
+          <div class="score-label">Total Score</div>
+          <div id="scoreTotal" class="score-total">0</div>
+
+          <div class="score-row">
+            <div class="score-mini">
+              <div class="score-label-sm">Drops</div>
+              <div id="dropCount" class="score-value-sm">0</div>
+            </div>
+
+            <button id="resetBtn" class="btn btn-outline" type="button">
+              Reset
+            </button>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="score-label-sm">Last drops</div>
+          <ul id="history" class="history"></ul>
+
+          <p class="tiny-note">
+            Tip: You can keep dropping unlimited coins. Reset clears coins + score.
+          </p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="../about/">About</a>
+        <a href="../blog/">Blog</a>
+        <a href="../contact/">Contact</a>
+        <a href="../">Homepage</a>
+        <a href="../photos/">Photos</a>
+        <a href="../plinko/">Plinko</a>
+      </nav>
+
+      <p class="footer-note">© <span id="year"></span> Scott &amp; Marissa’s Travels</p>
+    </div>
+  </footer>
+
+  <!-- Your site JS (year in footer) -->
+  <script src="../assets/js/main.js" defer></script>
+  <!-- Plinko logic -->
+  <script src="../assets/js/plinko.js" defer></script>
+</body>
+</html>
