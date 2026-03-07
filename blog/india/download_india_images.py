@@ -68,7 +68,7 @@ def main():
 
     for i, url in enumerate(urls, start=START_INDEX):
         try:
-            resp = session.get(url, timeout=TIMEOUT)
+            resp = session.get(url, timeout=(10, 30))
             resp.raise_for_status()
 
             ext = ext_from_response(resp)
@@ -76,6 +76,7 @@ def main():
             file_path = out_dir / filename
 
             file_path.write_bytes(resp.content)
+            print(f"Downloading {i:02d}: {url}")
             downloaded_files.append(file_path)
             print(f"[{i:02d}/{len(urls):02d}] Saved {filename}")
 
