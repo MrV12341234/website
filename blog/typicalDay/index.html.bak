@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>We made it to China! What we packed and first week — Scott & Marissa’s Travels</title>
+  <title>A Typical Day in our Chinese Life — Scott & Marissa’s Travels</title>
   <meta name="description" content="Our China Arrival blog post." />
 
   <!-- We are in /blog/chinaArrival/ so go up TWO levels -->
@@ -19,7 +19,7 @@
         <a href="../../about/">About</a>
         <a href="../../blog/">Blog</a>
         <a href="../../contact/">Contact</a>
-        <a href="../../plinko">Plinko</a>
+        <a href="../../">Homepage</a>
         <a href="../../photos/">Photos</a>
       </nav>
     </div>
@@ -28,11 +28,11 @@
   <main class="container section post-page">
     <a class="back-link" href="../">← Back to Blog</a>
 
-    <h1 class="post-title">Two weeks of School Training, School information, and our first month.</h1>
-    <p class="post-meta">October 2023 </p>
+    <h1 class="post-title">A Typical Day in our Chinese Life!</h1>
+    <p class="post-meta">November 2023 </p>
 
     
-         <img class="post-hero" src="../../assets/img/firstMonthCover.jpg" alt="First month in China cover photo" />
+         <img class="post-hero" src="../../assets/img/typicalDayCover.jpg" alt="Typical day in China cover photo" />
     
 
     <div class="post-body">
@@ -45,11 +45,10 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <nav class="footer-nav" aria-label="Footer">
-        <a href="../../">Homepage</a>
         <a href="../../about/">About</a>
         <a href="../../blog/">Blog</a>
         <a href="../../contact/">Contact</a>
-        <a href="../../plinko">Plinko</a>
+        <a href="../../">Homepage</a>
         <a href="../../photos/">Photos</a>
       </nav>
 
