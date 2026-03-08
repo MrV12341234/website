@@ -105,4 +105,7 @@ next, run your import gdoc script by typing this:
 py import_gdoc_export.py
 
 
+(gdoct_to_post.py was an experimental script that did the same as the above, but it required you to paste the google doc link into the script and it downloaded everything for you. It never quite worked right)
+
+
 
