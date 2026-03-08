@@ -3,19 +3,19 @@
 website link:
 https://mrv12341234.github.io/website/
 
-Blog cover images and other images used on geniric pages saved in website/assets/img
+Blog cover images and other images used on geniric pages saved in website/assets/img/
 
 **to add a new blog post, goto website/blog/index.html.
 Under "<section class="post-list" aria-label="Blog posts list">" add a new blog post list item (just copy a previous one. Ensure you have a "<hr class="post-divider" />" between the new post and the next one).
 
-You'll add a new folder to the blog folder. Create index.html file in this. Paste this into that file:
+You'll add a new folder to the blog folder (the title). Create index.html file in this. Paste this into that file:
 
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>We made it to China! What we packed and first week — Scott & Marissa’s Travels</title>
+  <title>Title — Scott & Marissa’s Travels</title> <!-- change this to the blog post title-->
   <meta name="description" content="Our China Arrival blog post." />
 
   <!-- We are in /blog/chinaArrival/ so go up TWO levels -->
@@ -76,4 +76,33 @@ You'll add a new folder to the blog folder. Create index.html file in this. Past
         
 
 
-Youll put your post where PASTE POST HERE is. Youll use ai to do this. (maybe create a python script to do it?)
+Youll put your post where <!--PASTE POST HERE--> is. 
+Next, from the file: website/blog/italy/ copy the python script "import_gdoc_export.py" and paste into your new post folder.
+(This is the script that will convert the google html and link your local images into index.html)
+
+Next, goto the google doc of the post you have written. Select: File -> Download -> Web Pge (html) 
+This will generate a folder named "images" and an html file. Put both of these files into your blog post folder (eg. websit/blog/italy)
+Rename the html file to "gdoc-export.html"
+Leave the images file alone
+
+At this point you need these 4 items in your blog post folder:
+-images (containing all your images)
+-import_gdoc_export.py
+-index.html (your index with the above )
+-gdoc-export.html (the google docs html)
+
+Open a file explorer and goto your blog post folder so you see the above 4 items. 
+"website/blog/italy/"
+In the top bar type "cmd"
+
+the cmd terminal will open 
+Depending on which computer you're using, might need to install this:
+py -m pip install beautifulsoup4
+
+^Type this and press enter^
+
+next, run your import gdoc script by typing this:
+py import_gdoc_export.py
+
+
+
