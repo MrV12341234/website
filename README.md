@@ -105,7 +105,11 @@ next, run your import gdoc script by typing this:
 py import_gdoc_export.py
 
 
-(gdoct_to_post.py was an experimental script that did the same as the above, but it required you to paste the google doc link into the script and it downloaded everything for you. It never quite worked right)
+
+Extra info:
+(inside website/blog/ italy there is "gdoct_to_post.py" It was an experimental script that did the same as the above, but it required you to paste the google doc link into the script and it downloaded everything for you. It never quite worked right)
+Inside websit/blog/india are 2 phython scripts and "wp-export.html". This was how i converted all the blog posts from word press here. 
+I put the word press html into "wp-export.html". THen first ran "download_india_images". Then ran Build_india_post.py
 
 
 
