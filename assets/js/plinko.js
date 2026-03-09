@@ -32,7 +32,7 @@
   const BIN_VALUES = [10, 50, 100, 250, 500, 250, 100, 50, 10];
 
   // Peg layout
-  const PEG_RADIUS = 7;
+  const PEG_RADIUS = 8;
   const PEG_GAP_X = 52;
   const PEG_GAP_Y = 48;
   const PEG_ROWS = 10;
