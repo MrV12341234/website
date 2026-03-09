@@ -3,7 +3,7 @@
 website link:
 https://mrv12341234.github.io/website/
 
--To test, right click the index.html in the main folder and select 'Live Server' (need to install this plugin in vs code)
+-To test website in VS Code, right click the index.html in the main folder and select 'Live Server' (need to install this plugin in vs code)
 
 Blog cover images and other images used on geniric pages saved in website/assets/img/
 

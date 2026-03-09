@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spin Wheel — Scott & Marissa’s Travels</title>
+  <meta name="description" content="Spin the wheel and land on a number." />
+
+  <link rel="stylesheet" href="../../assets/css/styles.css" />
+  <link rel="stylesheet" href="../../assets/css/spinwheel.css" />
+</head>
+
+<body id="top">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-title" href="../../">Scott &amp; Marissa’s Travels</a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <a href="../../about/">About</a>
+        <a href="../../blog/">Blog</a>
+        <a href="../../contact/">Contact</a>
+        <a href="../">Games</a>
+        <a href="../../photos/">Photos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <a class="back-link" href="../">← Back to Games</a>
+
+    <h1 class="post-title">Spin Wheel</h1>
+    <p class="post-meta">Set power → Spin → Land on a number.</p>
+
+    <div class="wheel-layout">
+      <!-- Wheel -->
+      <section class="wheel-board" aria-label="Spin wheel">
+        <div class="wheel-wrap">
+          <div class="wheel-pointer" aria-hidden="true"></div>
+          <canvas id="wheelCanvas" width="520" height="520"></canvas>
+        </div>
+
+        <div class="wheel-result">
+          <div class="result-label">Result</div>
+          <div id="resultValue" class="result-value">—</div>
+          <div id="resultDetail" class="result-detail">Click Spin to start.</div>
+        </div>
+      </section>
+
+      <!-- Controls -->
+      <aside class="wheel-sidebar" aria-label="Controls">
+        <div class="score-card">
+          <div class="score-label">Power</div>
+
+          <input
+            id="power"
+            class="power-slider"
+            type="range"
+            min="0"
+            max="100"
+            value="65"
+          />
+          <div class="power-row">
+            <span>0</span>
+            <span id="powerVal" class="power-val">65</span>
+            <span>100</span>
+          </div>
+
+          <button id="spinBtn" class="btn spin-btn" type="button">Spin</button>
+
+          <div class="divider"></div>
+
+          <label class="tick-toggle">
+            <input id="tickSound" type="checkbox" checked />
+            Tick sound
+          </label>
+
+          <p class="tiny-note">
+            Tip: Drag power higher for longer spins. You can tune “resistance” in the JS file.
+          </p>
+          <div class="divider"></div>
+
+<div class="score-label-sm">Spin history</div>
+<ul id="spinHistory" class="spin-history"></ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="../../">Homepage</a>
+        <a href="../../about/">About</a>
+        <a href="../../blog/">Blog</a>
+        <a href="../../contact/">Contact</a>
+        <a href="../">Games</a>
+        <a href="../../photos/">Photos</a>
+      </nav>
+
+      <p class="footer-note">© <span id="year"></span> Scott &amp; Marissa’s Travels</p>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/main.js" defer></script>
+  <script src="../../assets/js/spinwheel.js" defer></script>
+</body>
+</html>
